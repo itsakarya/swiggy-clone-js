@@ -110,5 +110,3 @@ function  createSection(class_name) {
     }
     console.log('link_nav_items');
     section2.append(link_nav_items);
-
-    ducnueiwe
