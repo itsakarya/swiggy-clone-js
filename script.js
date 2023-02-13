@@ -221,3 +221,129 @@ resturant_tabs.append(resturant_favourite_text);
 
 section3.append(resturant_tabs);
 
+
+let side_nav_bar=createDiv("side-nav-bar");
+let side_nav_bar_item=document.createElement("ul");
+side_nav_bar_item.setAttribute('class','side-nav-bar-items');
+side_nav_bar.append(side_nav_bar_item);
+
+let side_nav_bar_items=new Array(8);
+
+for(let i=0;i<8;i++) {
+    side_nav_bar_items[i]=document.createElement('li');
+    side_nav_bar_item.append(side_nav_bar_items[i]);
+}
+
+side_nav_bar_items[0].innerHTML='Recommended';
+side_nav_bar_items[0].setAttribute('class',"side-nav-bar-items-style");
+side_nav_bar_items[1].innerHTML='Dimsums & Baos';
+side_nav_bar_items[2].innerHTML='Appetizers';
+side_nav_bar_items[3].innerHTML='Signature Bowls';
+side_nav_bar_items[4].innerHTML='Rice & Noodles';
+side_nav_bar_items[5].innerHTML='Make Your Own Bowl';
+side_nav_bar_items[6].innerHTML='Steamy Soups';
+side_nav_bar_items[7].innerHTML='Work-tossed Gravies';
+section4.append(side_nav_bar);
+
+let center_body=createDiv("center-body");
+let center_body_header=createDiv("center-body-header");
+center_body_header.innerHTML='Recommended';
+center_body.append(center_body_header);
+
+let center_body_num_of_items=createDiv("center-body-num-of-items");
+center_body_num_of_items.innerHTML='39 ITEMS';
+center_body.append(center_body_num_of_items);
+
+let center_body_card=createDiv("center-body-card");
+let center_body_card_dish=createDiv("center-body-card-dish");
+let center_body_card_dish_icon=createDiv("center-body-card-dish-icon");
+center_body_card_dish_icon.innerHTML='<img class="center-body-card-dish-icon-modify" src="/assets/img1.png">';
+center_body_card_dish.append(center_body_card_dish_icon);
+
+let center_body_dish_name=createDiv("center-body-dish-name");
+center_body_dish_name.innerHTML='Veg Crystal Dimsums';
+center_body_card_dish.append(center_body_dish_name);
+
+let center_body_dish_price=createDiv("center-body-dish-price");
+center_body_dish_price.innerHTML='<i class="bi bi-currency-rupee "></i>269';
+center_body_card_dish.append(center_body_dish_price);
+
+let center_body_dish_description=createDiv("center-body-dish-description");
+center_body_dish_description.innerHTML="Needs no introduction- bite size steamed dumplings stuffed with <br> corn, spinach & other vegetables in Asian flavours and served with <br> auntie's in-house XO sauce.";
+center_body_card_dish.append(center_body_dish_description);
+center_body_card.append(center_body_card_dish);
+
+let center_body_card_img=createDiv("center-body-card-img");
+let center_body_card_img_item=createDiv("center-body-card-img-item");
+center_body_card_img_item.innerHTML='<img alt="Veg Crystal Dimsums" class="styles_itemImage__3CsDL" loading="lazy" width="150" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/qcjx4eiwq8wfbvd8a8v8">';
+center_body_card_img.append(center_body_card_img_item);
+let center_body_card_img_btn=createDiv("center-body-card-img-btn");
+center_body_card_img_btn.innerHTML='ADD';
+let center_body_card_img_btn_plus_icon=createDiv("center-body-card-img-btn-plus-icon");
+center_body_card_img_btn_plus_icon.innerHTML='+';
+center_body_card_img_btn.append(center_body_card_img_btn_plus_icon);
+center_body_card_img.append(center_body_card_img_btn);
+center_body_card.append(center_body_card_img);
+let center_body_card_img_btn_below_content=createDiv("center-body-card-img-btn-below-content");
+center_body_card_img_btn_below_content.innerHTML='customisable';
+center_body_card_img.append(center_body_card_img_btn_below_content);
+center_body.append(center_body_card);
+
+// another card
+
+let center_body_card_second=createDiv("center-body-card-second");
+let center_body_card_dish2=createDiv("center-body-card-dish");
+let center_body_card_dish_icon2=createDiv("center-body-card-dish-icon");
+center_body_card_dish_icon.innerHTML='<img class="center-body-card-dish-icon-modify" src="/assets/img1.png">';
+center_body_card_dish2.append(center_body_card_dish_icon2);
+
+let center_body_dish_name2=createDiv("center-body-dish-name");
+center_body_dish_name2.innerHTML='Chicken Crystal Dimsums';
+center_body_card_dish2.append(center_body_dish_name2);
+
+let center_body_dish_price2=createDiv("center-body-dish-price");
+center_body_dish_price2.innerHTML='<i class="bi bi-currency-rupee "></i>269';
+center_body_card_dish2.append(center_body_dish_price2);
+
+let center_body_dish_description2=createDiv("center-body-dish-description");
+center_body_dish_description2.innerHTML="|Serves 1-2|Needs no introduction- bite size steamed dumplings <br> stuffed with chicken & cilantro with Asian flavours and served with <br> auntie's in-house xo sauce.";
+center_body_card_dish2.append(center_body_dish_description2);
+center_body_card_second.append(center_body_card_dish2);
+
+let center_body_card_img2=createDiv("center-body-card-img");
+let center_body_card_img_item2=createDiv("center-body-card-img-item");
+center_body_card_img_item2.innerHTML='<img alt="Chicken Crystal Dimsums" class="styles_itemImage__3CsDL" loading="lazy" width="256" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/nrkybvr5qpjplej2zjln">';
+center_body_card_img2.append(center_body_card_img_item2);
+
+let center_body_card_img_btn2=createDiv("center-body-card-img-btn");
+center_body_card_img_btn2.innerHTML='ADD';
+let center_body_card_img_btn_plus_icon2=createDiv("center-body-card-img-btn-plus-icon");
+center_body_card_img_btn_plus_icon2.innerHTML='+';
+center_body_card_img_btn2.append(center_body_card_img_btn_plus_icon2);
+center_body_card_img2.append(center_body_card_img_btn2);
+center_body_card_second.append(center_body_card_img2);
+
+let center_body_card_img_btn_below_content2=createDiv("center-body-card-img-btn-below-content");
+center_body_card_img_btn_below_content2.innerHTML='customisable';
+center_body_card_img2.append(center_body_card_img_btn_below_content2);
+
+center_body.append(center_body_card_second);
+section4.append(center_body);
+
+
+
+let aside=createDiv("aside");
+let aside_top_content=createDiv("aside-top-content");
+aside_top_content.innerHTML='<strong>Cart Empty</strong>';
+aside.append(aside_top_content);
+
+let aside_log_content=createDiv("aside-log-content");
+aside_log_content.innerHTML='<img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_480/Cart_empty_-_menu_2x_ejjkf2" class="aside-logo-modify ">';
+aside.append(aside_log_content);
+
+let aside_bottom_content=createDiv("aside-bottom-content");
+aside_bottom_content.innerHTML='Good food is always cooking! <br> Go ahead, order some yummy items from the menu.';
+aside.append(aside_bottom_content);
+
+
+section4.append(aside);
