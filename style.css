@@ -6,6 +6,7 @@
     box-sizing: border-box;
     outline: none;
     font-family: 'proxima-nova', sans-serif;
+    /* border: solid red 1px; */
 }
 
 .top-banner {
@@ -137,7 +138,6 @@
     padding-left: 30px;
     padding-right: 30px;
 }
-
 .resturant-offer-items {
     position: relative;
     display: flex;
@@ -266,6 +266,12 @@
 
 }
 
+.center-body-card-items{
+    display:flex;
+    flex-direction: column;
+    /* border: solid red 1px; */
+}
+
 .side-nav-bar {
   height: 510px;
   border-right: #eaebef solid 1px;
@@ -297,11 +303,12 @@
     display: flex;
     flex-direction: row;
     margin-right: 50px;
+    margin-bottom: 30px;
     justify-content: space-between;
     border-bottom: solid 1px rgb(223, 221, 221);
     padding-bottom: 20px;
 }
-.center-body-card-second {
+/* .center-body-card-second {
     display: flex;
     flex-direction: row;
     margin-right: 50px;
@@ -309,7 +316,7 @@
     border-bottom: solid 1px rgb(223, 221, 221);
     padding-bottom: 20px;
     padding-top: 30px;
-}
+} */
 
 
 .center-body-card-dish-icon-modify {
