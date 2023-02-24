@@ -157,7 +157,6 @@ resturant_description_content_items_container.append(rating);
 let time_var=createDiv("time");
 time_var.classList.add("time");
 time_var.classList.add('new-font-again');
-// time_var.setAttribute('class','new-font-again time');
 time_var.innerHTML='19 min';
 
 let delivery=createDiv('delivery');
